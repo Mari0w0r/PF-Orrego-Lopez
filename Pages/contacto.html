@@ -1,117 +1,144 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet"  href="../bootstrap/css/bootstrap.min.css" >
     <link rel="stylesheet" href="../css/prueba.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Contacto</title>
 </head>
-<main>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar__title animate__animated animate__bounceInLeft" href="../index.html">VALONOW</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end animate__animated animate__bounceInRight" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="./noticias.html">Noticias</a>
-                  <a class="nav-link" href="./guias.html">Guías</a>
-                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
-                </div>
-              </div>
+    <main>
+        <body>
+            <header>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <a class="navbar__title animate__animated animate__bounceInLeft" href="../index.html">VALONOW</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-end animate__animated animate__bounceInRight" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link" href="./noticias.html">Noticias</a>
+                          <a class="nav-link" href="./guias.html">Guías</a>
+                          <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                          <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </header>
+
+                <section>
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="form-holder">
+                                <div class="form-content">
+                                    <div class="form-items">
+                                        <h3>Registrarme</h3>
+                                        <form class="requires-validation" novalidate>
+                
+                                            <div class="col-md-12">
+                                               <input class="form-control" type="text" name="name" placeholder="Nombre completo" required>
+                                               <div class="valid-feedback">Username field is valid!</div>
+                                               <div class="invalid-feedback">Username field cannot be blank!</div>
+                                            </div>
+                
+                                            <div class="col-md-12">
+                                                <input class="form-control" type="email" name="email" placeholder="Correo Electrónico" required>
+                                                 <div class="invalid-feedback">Llena este espacio!</div>
+                                            </div>
+                
+                                           <div class="col-md-12">
+                                                <select class="form-select mt-3" required>
+                                                      <option selected disabled value="">Rango</option>
+                                                      <option value="hierro-bronce">Hierro-Bronce</option>
+                                                      <option value="plata-platino">Plata-Platino</option>
+                                                      <option value="diamante-ascendente">Diamante-Ascendente</option>
+                                               </select>
+                                                <div class="invalid-feedback">Selecciona un rango</div>
+                                           </div>
+                
+                
+                                           <div class="col-md-12">
+                                              <input class="form-control" type="password" name="password" placeholder="Contraseña" required>
+                                               <div class="invalid-feedback">Llena este espacio!</div>
+                                           </div>
+                
+                
+                                           <div class="col-md-12 mt-3">
+                                            <label class="mb-3 mr-1" for="gender">Género: </label>
+                
+                                            <input type="radio" class="btn-check" name="gender" id="hombre" autocomplete="off" required>
+                                            <label class="btn btn-sm btn-outline-secondary" for="male">Hombre</label>
+                
+                                            <input type="radio" class="btn-check" name="gender" id="mujer" autocomplete="off" required>
+                                            <label class="btn btn-sm btn-outline-secondary" for="female">Mujer</label>
+                
+                                            <input type="radio" class="btn-check" name="gender" id="otro" autocomplete="off" required>
+                                            <label class="btn btn-sm btn-outline-secondary" for="secret">Otro</label>
+                                                <div class="invalid-feedback mv-up">Por favor seleccione!</div>
+                                            </div>
+                
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                          <label class="form-check-label">Confirmo que mi información es correcta</label>
+                                         <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                                        </div>
+                                  
+                
+                                            <div class="form-button mt-3">
+                                                <button id="submit" type="submit" class="btn btn-primary">Aplicar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>       
+            
+        
+            <section class="container-fluid">
+                <h2>Populares de la semana</h2>
+                <div class="row noticia__secundaria">
+                <article class="col-lg-4 noticias-chicas__img">
+                    <img class="w-100" src="../multimedia/poki.jpg" alt="">
+                    <h3 class="noticias-chicas"> Pokimane anuncia su regreso al streaming</h3>
+                    <p class="noticias-chicas">Después de un largo descanso la popular streamer volverá al mundo del streaming con un horario regular.</p>
+                </article>
+                <article class="col-lg-4">
+                    <img class="w-100" src="../multimedia/habilidadesagente.jpg" alt="">
+                    <h3 class="noticias-chicas">Leaks de las habilidades del nuevo agente</h3>
+                    <P class="noticias-chicas"> Se filtran en twitter las posibles habilidades del nuevo agente del protocolo Valorant, que llegará en el próximo acto.</P>
+                </article>
+                    <article class="col-lg-4">
+                        <img class="w-100" src="../multimedia/vctequipos.jpg" alt="">
+                        <h3 class="noticias-chicas">Resultados de la primera semana de la VCT</h3>
+                        <p class="noticias-chicas">Aquí estan los resultados de la primera semana de la VALORANT CHAMPIONS TOUR 2022</p>
+                    </article>
             </div>
-          </nav>
-        </header>
-
-
-<section class="formulario">
-    <form action="">
-
-        <h2>FORMULARIO</h2>
-
-        <div>
-        <label for="nombre-usuario">Nombre y Apellido</label>
-        <input type="text" id="nombre-usuario" name="nombre-usuario">
-        </div>
-
-        <div>
-        <label for="mail-usuario">Coreo Electrónico</label>
-        <input type="email" id="mail-usuario">
-        </div>
-
-        <div>
-        <label for="asuntos-mail">Asunto</label>
-        <select id="asuntos-mail">
-            <option value="errores">Errores</option>
-            <option value="peticiones">Peticiones Coaching</option>
-            <option value="consultas">Consultas</option>
-            <option value="devoluciones">Devoluciones</option>
-            <option value="otro">Otro</option>
-        </select>
-        </div>
-
-        <div>
-        <label for="recibir-noticias">Deseo recibir noticias de cualquier contenido nuevo</label>
-        <input type="checkbox" value="si-noticias" id="recibir-noticias">
-        </div>
-
-        <div>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="reset-formulario">
-        </div>
-    </form>
-
-</section>
-<div>
-    <h3 class="agradecimiento">¡Gracias por enviar el formulario!</h3>
-</div>
-<hr class="solid">
-<section>
-    <h2>Populares de la semana</h2>
-    <div class="noticias-chicas">
-    <div class="noticias-chicas__img"> 
-        <article>
-            <img class="noticias-chicas__img" class="noticias-chicas__img" src="../multimedia/vct equipos.jpg" alt="">
-            <h3>Resultados de la primera semana de la VCT</h3>
-        </article>
-    </div>
-    <div>
-        <article>
-            <img class="noticias-chicas__img"  src="../multimedia/mouse.jpg" alt="">
-            <h3>Mejores periféricos del 2022 para Esports</h3>
-        </article>
-    </div>
-    <div>
-        <article>
-            <img class="noticias-chicas__img" src="../multimedia/valorant guia.png" alt="">
-            <h3>5 pro tips para mejorar en Valorant</h3>
-        </article>
-    </div>
-
-</div>
-</section>
-
-
-    <footer class="footer">
-        <div class="container__footer">
-            <ul class="footer__img">
-                <li><a href="https://twitter.com/KunaiEsports"><img src="../multimedia/twitter.png" alt=""></a></li>
-                <li> <a href="https://www.instagram.com/kunaiesports/"><img src="../multimedia/instagram.png" alt=""></a></li>
-                <li><a href="https://www.tiktok.com/@kunaiesports"><img src="../multimedia/tiktok.png" alt=""></a></li>
-                <li> <a href="https://www.twitch.tv/kunai_esports"><img src="../multimedia/twitch.png" alt=""></a></li>
-            </ul>
-        </div>
-    </footer>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+            </section>
+        
+        
+        <footer class="">
+            <div class="">
+                <div class="footer__img">
+                   <a href="https://twitter.com/KunaiEsports"><img class="redes" src="../multimedia/twitter.png" alt=""></a>
+                    <a href="https://www.instagram.com/kunaiesports/"><img class="redes" src="../multimedia/instagram.png" alt=""></a>
+                   <a href="https://www.tiktok.com/@kunaiesports"><img class="redes" src="../multimedia/tiktok.png" alt=""></a>
+                    <a href="https://www.twitch.tv/kunai_esports"><img class="redes" src="../multimedia/twitch.png" alt=""></a>
+                    <a href=""><img class="redes" src="../multimedia/discord.png" alt=""></a>
+            </div>
+            </div>
+        </footer>
+            <script src="../bootstrap/js/bootstrap.min.js"></script>
+        </body>
+        </main>   
 </body>
-</main>
 </html>
