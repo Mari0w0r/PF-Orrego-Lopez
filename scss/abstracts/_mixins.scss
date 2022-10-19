@@ -1,0 +1,24 @@
+@mixin tipografia($weight, $justify, $size){
+    font-family: $titulos;
+    font-style: normal;
+    font-weight: $weight;
+    text-align: $justify;
+    font-size: $size;
+    color: $parrafo;
+  }
+
+
+  @mixin md{
+    @media (min-width: 768px) {
+      @content
+  }
+  }
+  
+  
+
+  @mixin lg{
+    @media (min-width: 992px){
+      @content
+    }
+  }
+  

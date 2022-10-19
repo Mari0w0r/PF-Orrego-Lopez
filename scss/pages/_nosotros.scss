@@ -1,0 +1,60 @@
+.noticias-chicas{
+  text-align: center;
+
+  &__img{
+    margin-top: 2rem;
+  }
+
+}
+
+.rangos-izquierda{
+    padding-left: 2rem;
+    padding-right: 0rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    @include lg{
+
+    }
+  }
+  
+  .rangos-derecha{
+    padding-right: 2rem;
+    padding-left: 0rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .rango-1{
+  width: 9rem;
+  height: 9rem;
+
+  @include md{
+    width: 12rem;
+height: 12rem;
+  }
+  }
+  
+  .rango-2{
+    width: 9rem;
+    height: 9rem;
+
+    @include md{
+      width: 20rem;
+  height: 20rem;
+    }
+  }
+
+  .p-pregunta{
+    margin: 1rem;
+    margin-top: 1.5rem;
+    text-align: center;
+
+    @include md{
+      margin: 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+    }
+  }

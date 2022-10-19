@@ -1,0 +1,37 @@
+.video-div{
+    margin: 2rem;
+    text-align: center
+    ;
+    .videop{
+      min-width: 15rem;
+      min-height: 12rem;
+
+      @include md{
+        min-width: 42rem;
+  min-height: 24rem;
+      }
+
+      @include lg{
+        min-width: 70rem;
+  min-height: 42rem;
+      }
+    }
+
+    @include md{
+      font-size: 2.8rem;
+    }
+
+    }
+    
+    .guias-title{
+      margin: 1rem;
+      margin-top: 2rem;
+      font-size: 3rem;
+
+      @include lg{
+        margin: 3rem;
+    margin-top: 5rem;
+    font-size: 4rem;
+      }
+    }
+    

@@ -1,0 +1,61 @@
+.noticia_sm{
+    padding: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    &-title{
+      font-size: 1.3rem;
+
+      @include md{
+        font-size: 2rem;
+      }
+
+      @include lg{
+        font-size: 3.5rem;
+      }
+    }
+
+    @include lg{
+      padding: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    }
+  }
+  
+  .recientes{
+    padding: 1rem;
+
+    p{
+        text-align: justify;
+
+        @include md{
+          text-align: center;
+        }
+
+        @include lg{
+          text-align: center;
+          font-size: 1.7rem;
+        }
+    }
+    
+    h4{
+      text-align: center;
+
+      @include md{
+        font-size: 2rem;
+    padding-bottom: 1rem;
+      }
+
+      @include lg{
+        text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+      }
+    }
+
+    @include lg{
+      padding: 1rem;
+    }
+  }
+
+ 

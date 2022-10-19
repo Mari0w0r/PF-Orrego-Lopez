@@ -1,0 +1,108 @@
+.aside {
+    @include tipografia(600, center, 1.5rem);
+    padding: 1rem 1rem 1rem 1rem;
+
+    @include md{
+      text-align:right;
+      padding: 1.2rem 1.5rem 1rem 1rem;
+    }
+
+    @include lg{
+      text-align: right;
+      padding: 1rem;
+      padding-right: 1.3rem;
+      padding-left: 0rem;
+    }
+
+    &__text{
+      @include lg{
+        font-size: 2.2rem;
+        text-align: justify;
+      }
+    }
+  }
+    
+   
+  .principal{
+
+    h2{
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    p{
+    padding: 1rem 1rem 1.5rem 1rem;
+    font-size: 1.2rem;
+    margin: 0;
+
+    @include lg{
+      padding-left: 1.3rem;
+      font-size: 1.7rem;
+    }
+    }
+
+    img{
+        padding: 2rem 1rem 1.2rem 1rem;
+
+        @include lg{
+          padding: 2rem 0rem 1rem 1.3rem;
+        }
+    }
+  }
+  
+
+  /*seccion de valonow*/
+
+  .guias{
+    padding: 0.5rem 1rem;
+
+    @include lg{
+      padding: 1rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+  }
+
+  .valonow{
+    margin: 1.5rem 0rem 2rem 0rem;
+    text-decoration: underline;
+
+    @include lg{
+      font-size: 2.5rem;
+    }
+  }
+
+  .noticia__secundaria{
+    @include lg{
+      padding: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }
+  }
+
+
+  .noticias-chicas{
+    text-align: justify;
+
+    @include lg{
+      font-size: 1.4rem;
+      text-align: justify;
+    }
+  }
+  
+  .noticias-chicas__img{
+    margin-top: 2rem;
+
+    @include lg{
+      margin: 0rem;
+    }
+  }
+
+  .subtitulo{
+    @include lg{
+      text-align: left;
+      padding-left: 1.3rem;
+      margin-bottom: 0rem;
+      font-size: 4rem;
+    }
+    }
