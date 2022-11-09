@@ -1,0 +1,27 @@
+.principal__img{
+    padding: 2rem 1rem 1.2rem 1rem;
+
+    @include lg{
+      padding: 2rem 0rem 1rem 1.3rem;
+    }
+}
+
+.rango-1{
+    width: 9rem;
+    height: 9rem;
+  
+    @include md{
+      width: 12rem;
+  height: 12rem;
+    }
+    }
+    
+    .rango-2{
+      width: 9rem;
+      height: 9rem;
+  
+      @include md{
+        width: 20rem;
+    height: 20rem;
+      }
+    }

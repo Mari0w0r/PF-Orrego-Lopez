@@ -11,6 +11,7 @@ ul, ol {
 
 a {
   text-decoration: none;
+  color: #F2F2F2;
 }
 
 html {
@@ -22,6 +23,11 @@ main {
   overflow: hidden;
   width: fit-content;
   height: fit-content;
+}
+
+span {
+  text-decoration: none;
+  color: #F2F2F2;
 }
 
 h1 {
@@ -103,14 +109,37 @@ p {
 }
 @media (min-width: 768px) {
   .parrafo__justificado {
-    padding: 1rem 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .parrafo__justificado {
+    padding: 1rem 2.5rem 1rem 2.5rem;
   }
 }
 @media (min-width: 992px) {
   .parrafo__justificado {
-    padding-left: 1.3rem;
-    font-size: 1.7rem;
+    font-size: 2rem;
+    padding: 0rem 3rem;
+  }
+}
+
+.noticias-3 {
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .noticias-3 {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .noticias-3 {
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .noticias-3 {
+    padding: 1rem 0.8rem 1rem 0.8rem;
   }
 }
 
@@ -132,6 +161,7 @@ p {
 .navbar_link {
   color: white;
   font-family: "Bebas Neue", cursive;
+  text-decoration: none;
 }
 @media (min-width: 992px) {
   .navbar_link {
@@ -174,6 +204,7 @@ footer {
   .footer .redes {
     font-size: 4rem;
     width: 4rem;
+    margin-left: 1.5rem;
   }
 }
 
@@ -305,6 +336,54 @@ footer {
   color: #2acc80;
 }
 
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+
+.principal__img {
+  padding: 2rem 1rem 1.2rem 1rem;
+}
+@media (min-width: 992px) {
+  .principal__img {
+    padding: 2rem 0rem 1rem 1.3rem;
+  }
+}
+
+.rango-1 {
+  width: 9rem;
+  height: 9rem;
+}
+@media (min-width: 768px) {
+  .rango-1 {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+.rango-2 {
+  width: 9rem;
+  height: 9rem;
+}
+@media (min-width: 768px) {
+  .rango-2 {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
 .aside {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-style: normal;
@@ -323,9 +402,15 @@ footer {
 @media (min-width: 992px) {
   .aside {
     text-align: right;
-    padding: 1rem;
-    padding-right: 1.3rem;
-    padding-left: 0rem;
+    padding: 1rem 3rem 1rem 2rem;
+    margin: 1rem 0rem 2.5rem 0rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .aside {
+    margin: 0rem;
+    padding: 2rem 3rem 1rem 2rem;
+    text-align: center;
   }
 }
 @media (min-width: 992px) {
@@ -350,14 +435,6 @@ footer {
     font-size: 1.7rem;
   }
 }
-.principal img {
-  padding: 2rem 1rem 1.2rem 1rem;
-}
-@media (min-width: 992px) {
-  .principal img {
-    padding: 2rem 0rem 1rem 1.3rem;
-  }
-}
 
 /*seccion de valonow*/
 .guias {
@@ -375,9 +452,21 @@ footer {
   margin: 1.5rem 0rem 2rem 0rem;
   text-decoration: underline;
 }
+@media (min-width: 768px) {
+  .valonow {
+    font-size: 1.8rem;
+    margin: 2rem 0rem 3rem 0rem;
+  }
+}
 @media (min-width: 992px) {
   .valonow {
     font-size: 2.5rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .valonow {
+    margin: 2.5rem 0rem 4rem 0rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -392,10 +481,25 @@ footer {
 .noticias-chicas {
   text-align: justify;
 }
+@media (min-width: 768px) {
+  .noticias-chicas {
+    margin-top: 0.5rem;
+    font-size: 1.7rem;
+  }
+}
 @media (min-width: 992px) {
   .noticias-chicas {
-    font-size: 1.4rem;
-    text-align: justify;
+    font-size: 1.5rem;
+  }
+}
+
+.noticias-chicas-t {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .noticias-chicas-t {
+    margin-top: 1rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -424,6 +528,7 @@ footer {
 }
 .noticia_sm-title {
   font-size: 1.3rem;
+  margin-top: 0.8rem;
 }
 @media (min-width: 768px) {
   .noticia_sm-title {
@@ -444,7 +549,7 @@ footer {
 }
 
 .recientes {
-  padding: 1rem;
+  padding: 0rem 1rem 1rem 1rem;
 }
 .recientes p {
   text-align: justify;
@@ -460,25 +565,27 @@ footer {
     font-size: 1.7rem;
   }
 }
-.recientes h4 {
+.recientes__title {
   text-align: center;
+  margin-top: 1rem;
 }
 @media (min-width: 768px) {
-  .recientes h4 {
+  .recientes__title {
     font-size: 2rem;
     padding-bottom: 1rem;
   }
 }
 @media (min-width: 992px) {
-  .recientes h4 {
+  .recientes__title {
     text-align: center;
     font-size: 2.5rem;
     padding-bottom: 1rem;
+    padding: 1rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) and (max-width: 1024px) {
   .recientes {
-    padding: 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -502,9 +609,21 @@ footer {
     min-height: 42rem;
   }
 }
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .video-div .videop {
+    min-width: 53rem;
+    min-height: 30rem;
+  }
+}
 @media (min-width: 768px) {
   .video-div {
     font-size: 2.8rem;
+  }
+}
+@media (min-width: 992px) {
+  .video-div {
+    margin-top: 4.5rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -513,10 +632,14 @@ footer {
   margin-top: 2rem;
   font-size: 3rem;
 }
+@media (min-width: 768px) {
+  .guias-title {
+    margin-bottom: 1.5rem;
+  }
+}
 @media (min-width: 992px) {
   .guias-title {
-    margin: 3rem;
-    margin-top: 5rem;
+    margin: 5rem 0rem 2.7rem 0rem;
     font-size: 4rem;
   }
 }
@@ -541,28 +664,6 @@ footer {
   margin-top: 1rem;
 }
 
-.rango-1 {
-  width: 9rem;
-  height: 9rem;
-}
-@media (min-width: 768px) {
-  .rango-1 {
-    width: 12rem;
-    height: 12rem;
-  }
-}
-
-.rango-2 {
-  width: 9rem;
-  height: 9rem;
-}
-@media (min-width: 768px) {
-  .rango-2 {
-    width: 20rem;
-    height: 20rem;
-  }
-}
-
 .p-pregunta {
   margin: 1rem;
   margin-top: 1.5rem;
@@ -575,6 +676,32 @@ footer {
     text-align: center;
     font-size: 2.8rem;
     font-weight: 600;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-center {
+    margin: 4rem 2rem 4rem 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .text-center {
+    margin: 2.5rem 1rem 2.5rem 1rem;
+  }
+}
+
+.contacto-title {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .noticia__secundaria {
+    padding-top: 0rem;
+  }
+}
+@media (min-width: 992px) {
+  .noticia__secundaria {
+    padding-top: 0rem;
   }
 }
 

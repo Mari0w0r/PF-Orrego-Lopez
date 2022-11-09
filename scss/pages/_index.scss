@@ -9,17 +9,22 @@
 
     @include lg{
       text-align: right;
-      padding: 1rem;
-      padding-right: 1.3rem;
-      padding-left: 0rem;
+      padding: 1rem 3rem 1rem 2rem;
+      margin: 1rem 0rem 2.5rem 0rem;
     }
 
+    @include ipadpro{
+      margin: 0rem;
+      padding: 2rem 3rem 1rem 2rem;
+      text-align: center;
+    }
     &__text{
       @include lg{
         font-size: 2.2rem;
         text-align: justify;
       }
     }
+    
   }
     
    
@@ -40,14 +45,6 @@
       font-size: 1.7rem;
     }
     }
-
-    img{
-        padding: 2rem 1rem 1.2rem 1rem;
-
-        @include lg{
-          padding: 2rem 0rem 1rem 1.3rem;
-        }
-    }
   }
   
 
@@ -62,13 +59,22 @@
       margin-top: 2rem;
     }
   }
-
   .valonow{
     margin: 1.5rem 0rem 2rem 0rem;
     text-decoration: underline;
 
+    @include md{
+      font-size: 1.8rem;
+      margin: 2rem 0rem 3rem 0rem;
+    }
+
     @include lg{
       font-size: 2.5rem;
+    }
+
+    @include ipadpro{
+      margin: 2.5rem 0rem 4rem 0rem;
+      font-size: 2.2rem;
     }
   }
 
@@ -84,11 +90,27 @@
   .noticias-chicas{
     text-align: justify;
 
-    @include lg{
-      font-size: 1.4rem;
-      text-align: justify;
+    @include md{
+      margin-top: 0.5rem;
+      font-size: 1.7rem;
     }
+
+    @include lg{
+      font-size: 1.5rem;
+    }
+
   }
+
+  .noticias-chicas-t{
+    text-align: center;
+
+    @include md{
+      margin-top: 1rem;
+      font-size: 1.7rem;
+    }
+   
+  }
+
   
   .noticias-chicas__img{
     margin-top: 2rem;
@@ -105,4 +127,4 @@
       margin-bottom: 0rem;
       font-size: 4rem;
     }
-    }
+  }

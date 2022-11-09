@@ -10,6 +10,7 @@ ul, ol {
 
 a{
     text-decoration: none;
+    color: $parrafo;
 }
 
 html{
@@ -21,4 +22,9 @@ main{
     overflow: hidden;
     width: fit-content;
     height: fit-content;
+  }
+
+  span{
+    text-decoration: none;
+    color: $parrafo;
   }

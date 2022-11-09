@@ -5,6 +5,7 @@
 
     &-title{
       font-size: 1.3rem;
+      margin-top: 0.8rem;
 
       @include md{
         font-size: 2rem;
@@ -23,7 +24,7 @@
   }
   
   .recientes{
-    padding: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
 
     p{
         text-align: justify;
@@ -38,8 +39,9 @@
         }
     }
     
-    h4{
+    &__title{
       text-align: center;
+      margin-top: 1rem;
 
       @include md{
         font-size: 2rem;
@@ -50,11 +52,12 @@
         text-align: center;
     font-size: 2.5rem;
     padding-bottom: 1rem;
+    padding: 1rem;
       }
     }
 
-    @include lg{
-      padding: 1rem;
+    @include ipadpro{
+      font-size: 1.5rem;
     }
   }
 

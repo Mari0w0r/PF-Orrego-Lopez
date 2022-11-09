@@ -1,0 +1,16 @@
+
+
+.contacto-title{
+    margin-bottom: 2rem;
+}
+
+.noticia__secundaria{
+
+    @include ipadpro{
+        padding-top: 0rem;
+    }
+
+    @include lg{
+        padding-top: 0rem;
+    }
+}

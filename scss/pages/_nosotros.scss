@@ -25,25 +25,7 @@
     margin-top: 1rem;
   }
   
-  .rango-1{
-  width: 9rem;
-  height: 9rem;
-
-  @include md{
-    width: 12rem;
-height: 12rem;
-  }
-  }
   
-  .rango-2{
-    width: 9rem;
-    height: 9rem;
-
-    @include md{
-      width: 20rem;
-  height: 20rem;
-    }
-  }
 
   .p-pregunta{
     margin: 1rem;
@@ -58,3 +40,12 @@ height: 12rem;
   font-weight: 600;
     }
   }
+
+  .text-center{
+    @include lg{
+      margin: 4rem 2rem 4rem 2rem;
+    }
+    @include md{
+      margin: 2.5rem 1rem 2.5rem 1rem;
+    }
+  } 

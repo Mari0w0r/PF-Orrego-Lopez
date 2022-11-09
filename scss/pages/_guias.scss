@@ -15,22 +15,37 @@
         min-width: 70rem;
   min-height: 42rem;
       }
+
+      @include ipadpro{
+        min-width: 53rem;
+        min-height: 30rem;
+      }
     }
 
     @include md{
       font-size: 2.8rem;
     }
 
+    @include lg{
+      margin-top: 4.5rem;
+      margin-bottom: 4rem;
     }
+
     
+    
+  }
     .guias-title{
       margin: 1rem;
       margin-top: 2rem;
       font-size: 3rem;
 
+      @include md{
+        margin-bottom: 1.5rem;
+      }
+
+
       @include lg{
-        margin: 3rem;
-    margin-top: 5rem;
+        margin: 5rem 0rem 2.7rem 0rem;
     font-size: 4rem;
       }
     }
